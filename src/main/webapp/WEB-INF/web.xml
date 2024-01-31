@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.i">
+
+
+<servlet>
+	<servlet-name>AccueilPage</servlet-name>
+	<servlet-class>dz.appdist.servlets.AccueilPage</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>AccueilPage</servlet-name>
+	<url-pattern>/Accueil</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>SignalementServlet</servlet-name>
+	<servlet-class>dz.appdist.servlets.SignalementServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>SignalementServlet</servlet-name>
+	<url-pattern>/signaler</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>sign_in</servlet-name>
+	<servlet-class>dz.appdist.servlets.sign_in</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>sign_in</servlet-name>
+	<url-pattern>/Login_Page</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>trouver_cpt</servlet-name>
+	<servlet-class>dz.appdist.servlets.trouver_cpt</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>trouver_cpt</servlet-name>
+	<url-pattern>/Searchcpt</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>resetpass</servlet-name>
+	<servlet-class>dz.appdist.servlets.resetpass</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>resetpass</servlet-name>
+	<url-pattern>/resetpass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>resetcode</servlet-name>
+	<servlet-class>dz.appdist.servlets.resetcode</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>resetcode</servlet-name>
+	<url-pattern>/resetcode</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>newpassword</servlet-name>
+	<servlet-class>dz.appdist.servlets.newpassword</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>newpassword</servlet-name>
+	<url-pattern>/newpassword</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>logout</servlet-name>
+	<servlet-class>dz.appdist.servlets.logout</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>logout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>sign_up</servlet-name>
+	<servlet-class>dz.appdist.servlets.sign_up</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>sign_up</servlet-name>
+	<url-pattern>/Register_Page</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ImageLocalisation</servlet-name>
+	<servlet-class>dz.appdist.servlets.ImageLocalisation</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ImageLocalisation</servlet-name>
+	<url-pattern>/ImageLocalisation</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>your.package.name.ChatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/chat</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Administrateur</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.Administrateur</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Administrateur</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>notification</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.notification</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>notification</servlet-name>
+        <url-pattern>/notification</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>customers</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.customers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customers</servlet-name>
+        <url-pattern>/customers</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteuser</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.deleteuser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteuser</servlet-name>
+        <url-pattern>/deleteuser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateuser</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.updateuser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateuser</servlet-name>
+        <url-pattern>/updateuser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adduser</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.adduser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adduser</servlet-name>
+        <url-pattern>/adduser</url-pattern>
+    </servlet-mapping>
+    
+  
+    <servlet>
+        <servlet-name>incidents</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.incidents</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>incidents</servlet-name>
+        <url-pattern>/incidents</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteincident</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.deleteincident</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteincident</servlet-name>
+        <url-pattern>/deleteincident</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateincident</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.updateincident</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateincident</servlet-name>
+        <url-pattern>/updateincident</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>descriptionIncident</servlet-name>
+        <servlet-class>dz.appdist.servlets.admin.descriptionIncident</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>descriptionIncident</servlet-name>
+        <url-pattern>/description</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+		<servlet-name>updatepass</servlet-name>
+		<servlet-class>dz.appdist.servlets.admin.updatepass</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updatepass</servlet-name>
+		<url-pattern>/updatepass</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>
